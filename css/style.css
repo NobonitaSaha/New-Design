@@ -1,69 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap');
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* ----------------
-	Button
-------------------- */
 
-button.order-btn {
-    border: none !important;
-    outline: none !important;
-    border-radius: 3px;
-}
 
-button.order-btn {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    background: none;
-    padding: 12px 24px;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-    color: #ffffff;
-    transition: 1s;
-	word-spacing: 1px;
-}
-
-button.order-btn:hover {
-    color: black;
-    background: #3e3e3e;
-    transition: 1s;
-	color: white;
+/* --------------------
+	Button Start 
+----------------------- */
+button.section-btn {
+    border-radius: 4px;
+    background-color: #5ca1e1;
     border: none;
-    outline: none;
+    color: #fff;
+    text-align: center;
+    padding: 12px 8px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgb(0 0 0 / 43%);
 }
 
-button.btn-enrol:hover::before {
-    height: 0%;
+button.section-btn > span {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
-
-button.btn-enrol::before {
-    height: 100px;
+  
+button.section-btn{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
-
-button.btn-enrol::before {
-    bottom: 0;
-    border-radius: 50% 50% 0 0;
-}
-
-button.order-btn::before {
-    content: "";
+  
+button.section-btn:after {
+    content: '→';
     position: absolute;
-    left: 0;
-    width: 100%;
-    background: #1171ed;
-    z-index: -1;
-    transition: 1s;
+    opacity: 0;  
+    top: 8px;
+    right: -28px;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif !important;
 }
+  
+button.section-btn:hover:after {
+    opacity: 1;
+    right: 8px;
+}
+/* --------------------
+	Button End
+----------------------- */
 
 
 
@@ -117,68 +111,6 @@ button.order-btn::before {
     line-height: 32px;
     padding: 0px 130px;
 }
-
-
-.banner-form {
-    background: white;
-    padding: 30px;
-    margin: 80px 30px;
-    border-radius: 20px;
-}
-
-h2.form-heading {
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 15px;
-    letter-spacing: 0.2px;
-}
-
-.banner-form label {
-    color: #222020e6;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.2px;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #cccccc52;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color: #a4a4a9;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    outline: 0;
-}
-
-textarea#subject {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    color: #a4a4a9;
-}
-
-input[type=submit] {
-    background-color: #1171ed;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 100%;
-    font-weight: 600;
-    font-family: 'Roboto';
-    letter-spacing: 0.4px;
-    padding: 8px;
-    margin-top: 10px;
-}
 /* -----------------------
 	Banner Section End
 -------------------------- */
@@ -186,37 +118,64 @@ input[type=submit] {
 
 
 /* -----------------------
-	Hotel-01 Section Start
+    Hotel About Start
 -------------------------- */
-.hotel-section {
-    padding: 120px 0px;
+.hotel-about-padding{
+    padding: 50px 0px 0px 0px;
 }
 
-h2.hotel-heading-right {
-    font-size: 45px;
+.section-container{
+    max-width: 1365px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.section-flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.hotel-content > h2{
+    font-size: 42px;
     font-weight: 500;
     font-family: 'Playfair Display', serif !important;
     color: #4a4a4a;
+    margin-top: -8px;
     margin-bottom: 20px;
-    line-height: 65px;
-    margin-top: -10px;
-    max-width: 500px;
+    line-height: 58px;
+    max-width: 460px;
 }
 
-.hotel-description-right {
-    font-family:  "Montserrat", sans-serif !important;
+.hotel-content > p{
+    font-family: "Montserrat", sans-serif !important;
     color: #9d9191;
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 35px;
     font-weight: 400;
-    margin-right: 100px;
-    text-align: justify;
 }
 
-/* -----------------------
-	Hotel-01 Section End
--------------------------- */
+.section-img > img{
+    width: 580px;
+    height: auto;
+}
+
+.section-padding-scroll {
+    padding: 110px 0px 80px 0px;
+}
+
+.scroll-content > h2 {
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif !important;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* ---------------------------
+    Hotel about End
+----------------------------- */
 
 
 
@@ -226,12 +185,15 @@ h2.hotel-heading-right {
 .hotel-scroll-section-01 #news-slider-01{
     margin-top: 18px;
 }
+
 .hotel-scroll-section-01 #news-slider-02{
     margin-top: 18px;
 }
+
 .hotel-scroll-section-01 #news-slider-03{
     margin-top: 18px;
 }
+
 .hotel-scroll-section-01 #news-slider-04{
     margin-top: 18px;
 }
@@ -376,60 +338,6 @@ a.over-layer {
 
 
 
-/* -----------------------
-	Hotel-Right Section Start
--------------------------- */
-.hotel-section-left{
-	padding: 120px 0px;
-}
-
-.row.w-100.row-left {
-    --bs-gutter-x: 0rem !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    overflow-x: hidden;
-}
-
-h2.hotel-heading-left {
-	font-size: 34px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    color: #4a4a4a;
-    margin-bottom: 20px;
-    line-height: 50px;
-    margin-top: -10px;
-    margin-left: 100px;
-}
-
-.hotel-description-left {
-    font-family: 'Urbanist', sans-serif;
-    color: #9d9191;
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 35px;
-    font-weight: 400;
-    margin-left: 100px;
-    text-align: justify;
-    margin-right: 15px;
-}
-
-.hotel-section-left button.order-btn.btn-enrol {
-    margin-left: 100px;
-}
-
-img.hotel-img-02{
-    width: 100%;
-    height: auto;
-}
-
-/* ----------------------------
-	Hotel-Right Section End
--------------------------------- */
-
-
-
-
-
 /*-------------------
 	Book Start
 --------------------- */
@@ -569,114 +477,6 @@ input {
 --------------------- */
 
 
-/* -----------------------
-    Hotel About Start
--------------------------- */
-.hotel-about-padding{
-    padding: 50px 0px 0px 0px;
-}
-
-.section-container{
-    max-width: 1365px;
-    margin: 0 auto;
-    width: 85%;
-}
-
-.section-flex{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-}
-
-.hotel-content > h2{
-    font-size: 42px;
-    font-weight: 500;
-    font-family: 'Playfair Display', serif !important;
-    color: #4a4a4a;
-    margin-top: -8px;
-    margin-bottom: 20px;
-    line-height: 58px;
-    max-width: 460px;
-}
-
-.hotel-content > p{
-    font-family: "Montserrat", sans-serif !important;
-    color: #9d9191;
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 35px;
-    font-weight: 400;
-}
-
-.section-img > img{
-    width: 580px;
-    height: auto;
-}
-
-
-
-
-button.section-btn {
-    border-radius: 4px;
-    background-color: #5ca1e1;
-    border: none;
-    color: #fff;
-    text-align: center;
-    padding: 12px 8px;
-    width: 170px;
-    transition: all 0.5s;
-    cursor: pointer;
-    box-shadow: 0 10px 20px -8px rgb(0 0 0 / 43%);
-}
-
-button.section-btn > span {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-  
-  button.section-btn{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  button.section-btn:after {
-    content: '→';
-    position: absolute;
-    opacity: 0;  
-    top: 8px;
-    right: -28px;
-    transition: 0.5s;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif !important;
-  }
-  
-  button.section-btn:hover:after {
-    opacity: 1;
-    right: 8px;
-}
-
-.section-padding-scroll {
-    padding: 110px 0px 80px 0px;
-}
-
-.scroll-content > h2 {
-    font-size: 42px;
-    font-weight: 500;
-    font-family: 'Playfair Display', serif !important;
-    color: #4a4a4a;
-    text-align: center;
-    margin-bottom: 40px;
-}
-/* ---------------------------
-    Hotel about End
------------------------------ */
-
-
 
 /* --------------------------
 	Footer Section Start
@@ -701,13 +501,6 @@ button.footer-btn {
     font-weight: 600;
     padding: 0px 10px;
 }
-
-
-
-/* --------------------------
-	Footer Section End
----------------------------- */
-
 
 
 /* -- Modal PopUp Start -- */
@@ -794,12 +587,15 @@ button.btn.btn-danger {
 /* -- Modal PopUp End -- */
 
 
+/* --------------------------
+	Footer Section End
+---------------------------- */
+
 
 
 /* ----------------------
 	Go Back Button Start
 ------------------------- */
-
 .to-top {
 	background: #5ca1e1;
 	position: fixed;
@@ -821,7 +617,6 @@ button.btn.btn-danger {
 	font-size: 18px;
 	color: white;
 }
-
 /* ----------------------
 	Go Back Button End
 ------------------------- */

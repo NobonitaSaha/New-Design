@@ -1,0 +1,383 @@
+@media only screen and (max-width: 375px) and (min-width: 346px) {
+}
+
+@media only screen and (max-width: 544px) and (min-width: 375px) {
+    
+}
+
+@media only screen and (max-width: 555px) and (min-width: 376px) {
+}
+
+@media only screen and (max-width: 1358px) and (min-width: 1202px) {
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
+	.banner-content {
+		padding: 120px 0px;
+	}
+
+	.banner-content h1 {
+		font-size: 48px;
+		line-height: 80px;
+	}
+
+	.banner-content p {
+		padding: 0px 60px;
+	}
+
+	.main-hero-section {
+		height: 570px;
+	}
+
+	.book .search {
+		padding: 28px 0px;
+		margin: -1px 30px -1px 30px;
+	}
+
+	.grid {
+		grid-gap: 20px;
+	}
+
+	input {
+		padding: 15px 5px;
+		font-size: 13px !important;
+	}
+
+	.box {
+		margin-left: 40px;
+	}
+
+	.section-flex {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.section-img > img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hotel-content > h2 {
+		max-width: 100%;
+		font-size: 36px;
+	}
+
+	.hotel-scroll-section-01 .post-slide .read-more {
+		float: inline-start;
+	}
+
+	.hotel-scroll-section-01 .post-slide .post-content {
+		padding: 0px 15px 70px 15px;
+	}
+
+	.hotel-scroll-section-01 .post-slide .read-more {
+		float: inline-start;
+		margin-top: 15px;
+	}
+
+	.section-padding-scroll {
+		padding: 80px 0px 60px 0px;
+	}
+
+	.scroll-content > h2 {
+		font-size: 36px;
+	}
+}
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 300px) {
+	
+	
+	
+	
+	/* ---------- Go Back Button Start --------- */
+	.to-top {
+		background: #046bd2;
+		position: fixed;
+		padding: 5px 6px;
+		right: 14px;
+		display: flex;
+		transition: all .4s;
+		z-index: 1;
+	}
+	.to-top i {
+		display: inline-block;
+		font-size: 17px;
+		color: white;
+	}
+	.to-top.active {
+		bottom: 15px;
+	}
+	/* ---------- Go Back Button End --------- */
+}
+
+
+
+@media only screen and (max-width: 849px) and (min-width: 601px) {
+	.banner-content {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 100px 0px;
+	}
+
+	.banner-content h1 {
+		font-size: 58px;
+		line-height: 80px;
+		font-weight: 500;
+	}
+
+	.banner-content p {
+		padding: 0px 0px;
+	}
+
+	.main-hero-section {
+		height: 570px;
+	}
+
+	form#myForm {
+		width: 100%;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 0px;
+	}
+
+	.box {
+		border-right: none;
+		padding-top: 25px;
+		padding-bottom: 0px;
+		margin-right: 0px;
+		margin-left: 35px;
+	}
+
+	.book .search input {
+		font-size: 24px !important;
+		margin-top: 0px !important;
+	}
+
+	.book .search {
+		padding: 0px;
+		width: 92%;
+		margin-left: 35px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.book {
+		top: 0px;
+		margin: 80px 0px;
+	}
+
+	.section-flex {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.section-img > img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hotel-content > h2 {
+		max-width: 100%;
+		font-size: 36px;
+	}
+
+	.post-slide .post-content {
+		padding: 0px 15px 70px 15px;
+	}
+
+	.section-padding-scroll {
+		padding: 80px 0px;
+	}
+
+	.scroll-content > h2 {
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+
+	.hotel-about-padding {
+		padding: 20px 0px 0px 0px;
+	}
+
+	.section-flex {
+		gap: 20px;
+	}
+
+	.section-flex.section-reverse {
+		gap: 20px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.hotel-scroll-section-01 .post-slide .read-more {
+		padding: 8px 12px;
+		margin-top: 40px;
+	}
+
+	.hotel-scroll-section-01 .post-slide .post-content {
+		padding: 2px 20px 70px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+	.section-container {
+		width: 100%;
+		padding: 0px 15px;
+	}
+
+	.banner-content {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 60px 0px;
+	}
+
+	.banner-content h1 {
+		font-size: 35px;
+		line-height: 50px;
+		font-weight: 500;
+	}
+
+	.banner-content p {
+		padding: 0px 0px;
+	}
+
+	.main-hero-section {
+		height: 480px;
+	}
+
+	form#myForm {
+		width: 100%;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 0px;
+	}
+
+	.box {
+		border-right: none;
+		padding-top: 25px;
+		padding-bottom: 0px;
+		margin-right: 0px;
+		margin-left: 25px;
+		width: 100%;
+	}
+
+	.book .search input {
+		font-size: 20px !important;
+		margin-top: 0px !important;
+	}
+
+	.book .search {
+		padding: 0px;
+		width: 95%;
+		margin-left: 25px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.book {
+		top: 0px;
+		margin: 80px 0px;
+	}
+
+	.section-flex {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.section-img > img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hotel-content > h2 {
+		max-width: 100%;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.post-slide .post-content {
+		padding: 0px 15px 70px 15px;
+	}
+
+	.section-padding-scroll {
+		padding: 60px 0px;
+	}
+
+	.scroll-content > h2 {
+		font-size: 30px;
+		margin-bottom: 25px;
+		line-height: 40px;
+	}
+
+	.hotel-about-padding {
+		padding: 0px;
+	}
+
+	.section-flex {
+		gap: 20px;
+	}
+
+	.section-flex.section-reverse {
+		gap: 20px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.hotel-scroll-section-01 .post-slide .read-more {
+		padding: 8px 12px;
+		margin-top: 40px;
+	}
+
+	.hotel-scroll-section-01 .post-slide .post-content {
+		padding: 2px 20px 70px;
+	}
+
+	h2.modal-title {
+		font-weight: 500;
+		font-size: 32px;
+	}
+
+	h3.footer-title {
+		font-size: 22px;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 530px) and (min-width: 376px) {
+	
+}
+
+
+
+@media only screen and (max-width: 631px) and (min-width: 531px) {
+	
+}
+
+
+
+@media only screen and (max-width: 832px) and (min-width: 632px) {
+	
+}
+
+
+
+@media only screen and (max-width: 1222px) and (min-width: 999px) {
+
+	
+}
